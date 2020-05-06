@@ -1,0 +1,19 @@
+.form-control {
+    margin: 1rem 0;
+}
+.form-control label,
+.form-control input {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+.btn{
+    color: #0E353D;
+    font-size:small;
+    font-weight: bold;
+    font-family: Courier, monospace;
+}
+label{
+    font-weight: bold;
+    font-size:medium;
+}

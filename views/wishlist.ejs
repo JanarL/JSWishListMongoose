@@ -1,0 +1,25 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/wish.css">
+</head>
+
+<body>
+        <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <h1>My Wishes</h1>
+        <p>List of all the wishes...</p>
+        
+        <% if(wishes.length > 0) { %>
+      
+            <% wishes.forEach(wishlist =>{ %>
+                
+                  <li><b>Wish:</b> <i><%= wishlist.wish %> </i><a href="/delete/<%= wishlist.id %>">Kustuta</a></li> 
+               
+        
+            <% }) %>
+        </div> 
+        <% } else { %>
+            <h1>WishList is empty!</h1>
+        <% } %>
+    </main>
+<%- include('includes/end.ejs') %>
