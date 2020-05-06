@@ -17,6 +17,6 @@ app.use(userRoute);
 app.use('/admin', adminRoute);
 
 
-app.listen(4040, ()=> {
-    console.log("Server is running on Port 4040.");
+app.listen(process.env.PORT || 4060, function(){
+    console.log("Server is running on Port 4060.");
 })
